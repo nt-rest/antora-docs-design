@@ -1,0 +1,35 @@
+body {
+  display: grid;
+  min-height: 100vh;
+}
+
+body.hlmrf {
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "header"
+    "lside"
+    "main"
+    "rside"
+    "footer";
+}
+
+body.hmrf {
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "rside"
+    "footer";
+}
+
+body.hlmf {
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "header"
+    "lside"
+    "main"
+    "footer";
+}

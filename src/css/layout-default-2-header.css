@@ -1,0 +1,38 @@
+header {
+  grid-area: header;
+  color: var(--color-header-foreground);
+  background-color: var(--color-header-background);
+}
+
+header > img {
+  vertical-align: top;
+  margin: 0.4rem 0 0 0.4rem;
+}
+
+header > nav {
+  display: inline-block;
+  overflow: visible;
+}
+
+header > nav ul {
+  list-style-type: none;
+  padding: 0 0 0 1rem;
+}
+
+header > nav li > a {
+  display: block;
+  padding: 0.1rem 0;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--color-header-foreground);
+  background-color: var(--color-header-background);
+  white-space: pre;
+}
+
+header > nav li > a:hover {
+  color: var(--color-header-foreground);
+}
+
+header > nav li > a:visited {
+  color: var(--color-header-foreground);
+}

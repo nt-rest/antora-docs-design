@@ -1,0 +1,44 @@
+aside.lside {
+  grid-area: lside;
+  color: var(--color-lside-foreground);
+  background-color: var(--color-lside-background);
+}
+
+aside.lside > h1 {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin: 2rem 0 0 1rem;
+}
+
+aside.lside > nav > ul {
+  margin: 0.5rem 0 0 0;
+}
+
+aside.lside > nav ul {
+  list-style-type: none;
+  padding: 0 0 0 1rem;
+}
+
+aside.lside > nav li {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+aside.lside > nav li > a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-lside-link-normal-color);
+}
+
+aside.lside > nav li > a:hover {
+  color: var(--color-lside-link-hover-color);
+}
+
+aside.lside > nav li > a:visited {
+  color: var(--color-lside-link-normal-color);
+}
+
+aside.lside > nav li.current > a {
+  font-weight: 500;
+  color: var(--color-lside-link-current-color);
+}

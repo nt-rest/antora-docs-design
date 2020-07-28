@@ -1,0 +1,37 @@
+@media (min-width: 1024px) {
+  main > nav {
+    display: block;
+    margin: 0 0 2rem 0;
+  }
+
+  main > nav ul {
+    list-style-type: none;
+    padding: 0.4rem var(--main-padding) 0.4rem var(--main-padding);
+  }
+
+  main > nav li {
+    display: inline;
+    list-style-type: none;
+    padding: 0.1rem 0.2rem 0.1rem 0;
+    font-size: 0.8rem;
+  }
+
+  main > nav li::before {
+    content: "/";
+    padding-right: 0.2rem;
+    font-weight: 700;
+  }
+
+  main > nav li > a {
+    text-decoration: none;
+    color: var(--color-breadcrumbs-link-normal-color);
+  }
+
+  main > nav li > a:hover {
+    color: var(--color-breadcrumbs-link-hover-color);
+  }
+
+  main > nav li > a:visited {
+    color: var(--color-breadcrumbs-link-current-color);
+  }
+}

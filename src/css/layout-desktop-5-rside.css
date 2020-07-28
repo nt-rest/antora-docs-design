@@ -1,0 +1,6 @@
+@media (min-width: 1024px) {
+  aside.rside > nav {
+    position: sticky;
+    top: 1rem;
+  }
+}

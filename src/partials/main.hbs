@@ -1,0 +1,34 @@
+		<main>{{~#if (eq page.layout '404')~}}
+				<h1 class="page">{{{or page.title 'Page Not Found'}}}</h1>
+				<p>
+					The page you&#8217;re looking for does not exist. It may have been moved.
+				</p>
+				<p>
+					If you arrived on this page by clicking on a link, please notify the owner of the site that the link is broken.
+					If you typed the URL of this page manually, please double check that you entered the address correctly.
+				</p>
+			{{~else~}}
+				<nav class="breadcrumbs" aria-label="breadcrumbs">
+				{{~#if page.breadcrumbs~}}
+				<ul>
+					{{~#with page.componentVersion~}}
+					{{~#if (and ./title (not (or ./root (eq ./title @root.page.breadcrumbs.0.content))))~}}
+					<li><a href="{{{relativize ./url}}}">{{{./title}}}</a></li>
+					{{~/if~}}
+					{{~/with~}}
+					{{~#each page.breadcrumbs~}}
+					<li>
+					{{~#if (and ./url (eq ./urlType 'internal'))~}}
+					<a href="{{{relativize ./url}}}">{{{./content}}}</a>
+					{{~else~}}
+					{{{./content}}}
+					{{~/if~}}
+					</li>
+					{{~/each~}}
+				</ul>
+				{{~/if~}}
+				</nav>
+				<h1>{{{page.title}}}</h1>
+				{{{page.contents}}}
+			{{~/if~}}
+		</main>

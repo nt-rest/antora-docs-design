@@ -1,0 +1,11 @@
+@media (min-width: 1024px) {
+  aside.lside > h1 {
+    position: fixed;
+    bottom: 2rem;
+  }
+
+  aside.lside > nav {
+    position: sticky;
+    top: 1.6rem;
+  }
+}

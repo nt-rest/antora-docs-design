@@ -1,0 +1,17 @@
+
+{{#if itemtree.length ~}}
+<ul>
+{{~#each itemtree ~}}
+<li class="{{#if (eq ./url @root.page.url)}}current{{/if}}" data-depth="{{or ../level 0}}">
+	{{~#if ./content ~}}
+		{{~#if ./url ~}}
+			<a class='type-{{{ ./urlType }}}' href="{{~#if (eq ./urlType 'internal')}}{{{relativize ./url}}}{{~else}}{{{./url}}}{{~/if}}">{{{./content}}}</a>
+		{{~else~}}
+			{{{./content}}}
+		{{~/if~}}
+	{{~/if~}}
+{{> lside-tree itemtree=./items level=(increment ../level)}}
+</li>
+{{~/each~}}
+</ul>
+{{~/if}}
