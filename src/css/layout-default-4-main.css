@@ -37,12 +37,24 @@ main h6.discrete {
   font-weight: 300;
 }
 
-main h1 { font-size: 2.6rem; }
-main div.sect1 > h2 { font-size: 2.4rem; }
-main div.sect2 > h3 { font-size: 2.2rem; }
-main div.sect3 > h4 { font-size: 1.8rem; }
-main div.sect4 > h5 { font-size: 1.6rem; }
-main div.sect5 > h6 { font-size: 1.4rem; }
+main h1 { font-size: 2.5rem; }
+main div.sect1 > h2 { font-size: 2.1rem; }
+main div.sect2 > h3 { font-size: 1.9rem; }
+main div.sect3 > h4 { font-size: 1.7rem; }
+main div.sect4 > h5 { font-size: 1.5rem; }
+main div.sect5 > h6 { font-size: 1.3rem; }
+
+main a {
+  color: var(--color-main-link-normal-color);
+}
+
+main a:visited {
+  color: var(--color-main-link-normal-color);
+}
+
+main a:hover {
+  color: var(--color-main-link-hover-color);
+}
 
 main div.sectionbody > div.paragraph,
 main div.sectionbody > div.dlist,
@@ -175,8 +187,8 @@ main thead {
 }
 
 main i.conum {
-  background-color: var(--color-note-background);
-  color: var(--color-note-foreground);
+  background-color: var(--color-main-note-background);
+  color: var(--color-main-note-foreground);
   border-radius: 100%;
   display: inline-block;
   width: 2rem;
@@ -193,23 +205,23 @@ main div.dlist > dl > dt { font-weight: 700; }
 main div.dlist > dl > dd { padding-left: 3rem; }
 
 main div.exampleblock > div.content {
-  color: var(--color-exampleblock-foreground);
-  background-color: var(--color-exampleblock-background);
+  color: var(--color-main-exampleblock-foreground);
+  background-color: var(--color-main-exampleblock-background);
 }
 
 main div.listingblock > div.content {
-  color: var(--color-listingblock-foreground);
-  background-color: var(--color-listingblock-background);
+  color: var(--color-main-listingblock-foreground);
+  background-color: var(--color-main-listingblock-background);
 }
 
 main div.literalblock > div.content {
-  color: var(--color-literalblock-foreground);
-  background-color: var(--color-literalblock-background);
+  color: var(--color-main-literalblock-foreground);
+  background-color: var(--color-main-literalblock-background);
 }
 
 main div.quoteblock > blockquote > div.paragraph {
-  color: var(--color-quoteblock-foreground);
-  border-left: 0.2rem solid var(--color-quoteblock-border);
+  color: var(--color-main-quoteblock-foreground);
+  border-left: 0.2rem solid var(--color-main-quoteblock-border);
 }
 
 main div.quoteblock > div.attribution {
@@ -217,12 +229,12 @@ main div.quoteblock > div.attribution {
 }
 
 main div.sidebarblock > div.content {
-  color: var(--color-sidebarblock-foreground);
-  background-color: var(--color-sidebarblock-background);
+  color: var(--color-main-sidebarblock-foreground);
+  background-color: var(--color-main-sidebarblock-background);
 }
 
 main table.tableblock td {
-  border-top: 1px solid var(--color-table-border);
+  border-top: 1px solid var(--color-main-table-border);
 }
 
 main div.olist,
@@ -257,28 +269,28 @@ main div.admonitionblock > table td.icon {
 }
 
 main div.admonitionblock.note {
-  background-color: var(--color-admonition-note-background);
-  color: var(--color-admonition-note-foreground);
+  background-color: var(--color-main-admonition-note-background);
+  color: var(--color-main-admonition-note-foreground);
 }
 
 main div.admonitionblock.tip {
-  background-color: var(--color-admonition-tip-background);
-  color: var(--color-admonition-tip-foreground);
+  background-color: var(--color-main-admonition-tip-background);
+  color: var(--color-main-admonition-tip-foreground);
 }
 
 main div.admonitionblock.warning {
-  background-color: var(--color-admonition-warning-background);
-  color: var(--color-admonition-warning-foreground);
+  background-color: var(--color-main-admonition-warning-background);
+  color: var(--color-main-admonition-warning-foreground);
 }
 
 main div.admonitionblock.caution {
-  background-color: var(--color-admonition-caution-background);
-  color: var(--color-admonition-caution-foreground);
+  background-color: var(--color-main-admonition-caution-background);
+  color: var(--color-main-admonition-caution-foreground);
 }
 
 main div.admonitionblock.important {
-  background-color: var(--color-admonition-important-background);
-  color: var(--color-admonition-important-foreground);
+  background-color: var(--color-main-admonition-important-background);
+  color: var(--color-main-admonition-important-foreground);
 }
 
 main div.admonitionblock > table { width: 100%; }
@@ -292,27 +304,27 @@ main div.admonitionblock > table td i.fa {
 
 main div.admonitionblock > table td i.fa.icon-note::before {
   content: "\f05a";
-  text-shadow: 1px 1px 2px var(--color-admonition-icon-shadow);
+  text-shadow: 1px 1px 2px var(--color-main-admonition-icon-shadow);
 }
 
 main div.admonitionblock > table td i.fa.icon-tip::before {
   content: "\f0eb";
-  text-shadow: 1px 1px 2px var(--color-admonition-icon-shadow);
+  text-shadow: 1px 1px 2px var(--color-main-admonition-icon-shadow);
 }
 
 main div.admonitionblock > table td i.fa.icon-warning::before {
   content: "\f071";
-  text-shadow: 1px 1px 2px var(--color-admonition-icon-shadow);
+  text-shadow: 1px 1px 2px var(--color-main-admonition-icon-shadow);
 }
 
 main div.admonitionblock > table td i.fa.icon-caution::before {
   content: "\f06d";
-  text-shadow: 1px 1px 2px var(--color-admonition-icon-shadow);
+  text-shadow: 1px 1px 2px var(--color-main-admonition-icon-shadow);
 }
 
 main div.admonitionblock > table td i.fa.icon-important::before {
   content: "\f06a";
-  text-shadow: 1px 1px 2px var(--color-admonition-icon-shadow);
+  text-shadow: 1px 1px 2px var(--color-main-admonition-icon-shadow);
 }
 
 main .menuseq {
@@ -334,7 +346,7 @@ main .button::after {
   padding-left: 0.2rem;
 }
 
-main mark { background-color: var(--color-mark-background); }
+main mark { background-color: var(--color-main-mark-background); }
 
 main .keyseq {
   white-space: nowrap;
@@ -343,8 +355,8 @@ main .keyseq {
 main .keyseq kbd {
   display: inline-block;
   font-size: 0.8rem;
-  background-color: var(--color-kbd-background);
-  border: 2px outset var(--color-kbd-border);
+  background-color: var(--color-main-kbd-background);
+  border: 2px outset var(--color-main-kbd-border);
   border-radius: 0.2rem;
   padding: 0 0.4rem;
   margin: 0 0.2rem;

@@ -29,10 +29,10 @@ header > nav li > a {
   white-space: pre;
 }
 
-header > nav li > a:hover {
+header > nav li > a:visited {
   color: var(--color-header-foreground);
 }
 
-header > nav li > a:visited {
+header > nav li > a:hover {
   color: var(--color-header-foreground);
 }

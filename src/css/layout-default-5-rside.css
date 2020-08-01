@@ -25,12 +25,12 @@ aside.rside > nav li > a {
   padding: 0.1rem 0 0 0;
 }
 
-aside.rside > nav li > a:hover {
-  color: var(--color-rside-link-hover-color);
-}
-
 aside.rside > nav li > a:visited {
   color: var(--color-rside-link-normal-color);
+}
+
+aside.rside > nav li > a:hover {
+  color: var(--color-rside-link-hover-color);
 }
 
 aside.rside > nav li.current > a {

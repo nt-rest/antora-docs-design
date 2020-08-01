@@ -30,12 +30,12 @@ aside.lside > nav li > a {
   color: var(--color-lside-link-normal-color);
 }
 
-aside.lside > nav li > a:hover {
-  color: var(--color-lside-link-hover-color);
-}
-
 aside.lside > nav li > a:visited {
   color: var(--color-lside-link-normal-color);
+}
+
+aside.lside > nav li > a:hover {
+  color: var(--color-lside-link-hover-color);
 }
 
 aside.lside > nav li.current > a {

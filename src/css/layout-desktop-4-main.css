@@ -24,14 +24,14 @@
 
   main > nav li > a {
     text-decoration: none;
-    color: var(--color-breadcrumbs-link-normal-color);
-  }
-
-  main > nav li > a:hover {
-    color: var(--color-breadcrumbs-link-hover-color);
+    color: var(--color-main-breadcrumbs-link-normal-color);
   }
 
   main > nav li > a:visited {
-    color: var(--color-breadcrumbs-link-current-color);
+    color: var(--color-main-breadcrumbs-link-current-color);
+  }
+
+  main > nav li > a:hover {
+    color: var(--color-main-breadcrumbs-link-hover-color);
   }
 }
