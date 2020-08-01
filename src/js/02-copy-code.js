@@ -18,6 +18,6 @@
         navigator.clipboard.writeText(codeElement.innerText)
       })
 
-    codeElement.parentNode.appendChild(buttonElement)
+    codeElement.parentNode.parentNode.appendChild(buttonElement)
   })
 })()

@@ -43,6 +43,29 @@ CAUTION: NT-REST is Windows(TM) specific so far. Specifically Windows(TM) 8.1 an
 
 IMPORTANT: NT-REST is Windows(TM) specific so far. Specifically Windows(TM) 8.1 and Windows(TM) 10 are supported. Linux and Mac versions are possible in theory, but we prefer to focus on 88% of desktops for now. We really love Linux though ❤️.
 
+[source,ini]
+----
+Windows Registry Editor Version 5.00 
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\TrifleSoft\NT-REST\Configuration\Origins\http://example.com]
+"AuthenticationServiceAccountNames"=hex(7):41,00,63,00,63,00,6f,00,75,00,6e,00,74,00,4e,00,61,00,6d,00,65,00,00,00,45,00,58,00,41,00,4d,00,50,00,4c,00,45,00,5c,00,41,00,63,00,63,00,6f,00,75,00,6e,00,74,00,4e,00,61,00,6d,00,65,00,00,00,45,00,58,00,41,00,4d,00,50,00,4c,00,45,00,2e,00,43,00,4f,00,4d,00,5c,00,41,00,63,00,63,00,6f,00,75,00,6e,00,74,00,4e,00,61,00,6d,00,65,00,00,00,61,00,63,00,63,00,6f,00,75,00,6e,00,74,00,2d,00,6e,00,61,00,6d,00,65,00,40,00,65,00,78,00,61,00,6d,00,70,00,6c,00,65,00,2e,00,63,00,6f,00,6d,00,00,00,00,00
+"AuthenticationServiceHttpHeaders"=hex(7):58,00,2d,00,43,00,75,00,73,00,74,00,6f,00,6d,00,2d,00,48,00,65,00,61,00,64,00,65,00,72,00,2d,00,31,00,3a,00,20,00,41,00,6c,00,70,00,68,00,61,00,00,00,58,00,2d,00,43,00,75,00,73,00,74,00,6f,00,6d,00,2d,00,48,00,65,00,61,00,64,00,65,00,72,00,2d,00,32,00,3a,00,20,00,42,00,65,00,74,00,61,00,00,00,00,00
+"AuthenticationServiceHttpMethod"="POST"
+"AuthenticationServiceHttpUrl"="https://example.com/callbacks/authentication"
+"AuthenticationServicePermissions"=dword:00000003
+"EventLogServicePermissions"=dword:00000017
+"FingerprintingServiceHttpHeaders"=hex(7):58,00,2d,00,43,00,75,00,73,00,74,00,6f,00,6d,00,2d,00,48,00,65,00,61,00,64,00,65,00,72,00,2d,00,31,00,3a,00,20,00,41,00,6c,00,70,00,68,00,61,00,00,00,58,00,2d,00,43,00,75,00,73,00,74,00,6f,00,6d,00,2d,00,48,00,65,00,61,00,64,00,65,00,72,00,2d,00,32,00,3a,00,20,00,42,00,65,00,74,00,61,00,00,00,00,00
+"FingerprintingServiceHttpMethod"="POST"
+"FingerprintingServiceHttpUrl"="https://example.com/callbacks/fingerprinting"
+"FingerprintingServicePermissions"=dword:00000001
+"IdentificationServiceHttpHeaders"=hex(7):58,00,2d,00,43,00,75,00,73,00,74,00,6f,00,6d,00,2d,00,48,00,65,00,61,00,64,00,65,00,72,00,2d,00,31,00,3a,00,20,00,41,00,6c,00,70,00,68,00,61,00,00,00,58,00,2d,00,43,00,75,00,73,00,74,00,6f,00,6d,00,2d,00,48,00,65,00,61,00,64,00,65,00,72,00,2d,00,32,00,3a,00,20,00,42,00,65,00,74,00,61,00,00,00,00,00
+"IdentificationServiceHttpMethod"="POST"
+"IdentificationServiceHttpUrl"="https://example.com/callbacks/identification"
+"IdentificationServicePermissions"=dword:00000001
+"PrintingServicePermissions"=dword:00000000
+----
+
+
 == Why?
 
 === The Problem

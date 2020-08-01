@@ -1,6 +1,6 @@
 @media (min-width: 1366px) {
   body.hlmrf {
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr minmax(auto, 70%) 1fr;
     grid-template-rows: 3rem auto 2rem;
     grid-template-areas:
       "header header header"
@@ -9,7 +9,7 @@
   }
 
   body.hmrf {
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr minmax(auto, 70%) 1fr;
     grid-template-rows: 3rem auto 2rem;
     grid-template-areas:
       "header header header"
@@ -18,7 +18,7 @@
   }
 
   body.hlmf {
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr minmax(auto, 70%) 1fr;
     grid-template-rows: 3rem auto 2rem;
     grid-template-areas:
       "header header header"
@@ -29,7 +29,7 @@
 
 @media (min-width: 1024px) and (max-width: 1366px) {
   body.hlmrf {
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr minmax(auto, 50%) 1fr;
     grid-template-rows: 3rem auto 2rem;
     grid-template-areas:
       "header header header"
@@ -38,7 +38,7 @@
   }
 
   body.hmrf {
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr minmax(auto, 50%) 1fr;
     grid-template-rows: 3rem auto 2rem;
     grid-template-areas:
       "header header header"
@@ -47,7 +47,7 @@
   }
 
   body.hlmf {
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr minmax(auto, 50%) 1fr;
     grid-template-rows: 3rem auto 2rem;
     grid-template-areas:
       "header header header"

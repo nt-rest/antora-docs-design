@@ -8,17 +8,17 @@ main {
 main > nav { display: none; }
 main div.content { position: relative; }
 
-main div.content > button.copy {
+main button.copy {
   position: absolute;
   top: -0.8rem;
-  left: calc(100% - 0.8rem);
+  left: calc(100% - var(--main-padding) - 0.8rem);
   font-family: "FontAwesome", monospace;
   font-size: 1.2rem;
   padding: 0.2rem;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
-main div.content > button.copy:hover { opacity: 100%; }
+main button.copy:hover { opacity: 1; }
 
 main h1,
 main div.sect1 > h2,
@@ -89,6 +89,7 @@ main div.sectionbody > div.sect2 > div.colist,
 main div.sectionbody > div.sect2 > div.sect3 > div.colist,
 main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.colist,
 main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > div.colist {
+  position: relative;
   padding: 0 var(--main-padding) 0 var(--main-padding);
   margin: 0 0 2rem 0;
 }
@@ -131,6 +132,7 @@ main div.olist > ol,
 main div.ulist > ul {
   padding: 0.4rem 0.4rem 0.4rem 1.2rem;
   font-size: 1rem;
+  overflow-x: auto;
 }
 
 main div.exampleblock div.title,

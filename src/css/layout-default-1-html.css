@@ -4,7 +4,7 @@ body {
 }
 
 body.hlmrf {
-  grid-template-columns: auto;
+  grid-template-columns: minmax(auto, 100%);
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
     "header"
@@ -15,7 +15,7 @@ body.hlmrf {
 }
 
 body.hmrf {
-  grid-template-columns: auto;
+  grid-template-columns: minmax(auto, 100%);
   grid-template-rows: auto auto auto auto;
   grid-template-areas:
     "header"
@@ -25,7 +25,7 @@ body.hmrf {
 }
 
 body.hlmf {
-  grid-template-columns: auto;
+  grid-template-columns: minmax(auto, 100%);
   grid-template-rows: auto auto auto auto;
   grid-template-areas:
     "header"

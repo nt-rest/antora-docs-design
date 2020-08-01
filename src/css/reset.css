@@ -4,18 +4,26 @@
   margin: 0;
 }
 
-pre,
-code,
-kbd {
+pre  {
   font-family: 'Roboto Mono', monospace;
-  white-space: pre-wrap;
+  white-space: pre;
+}
+
+code  {
+  font-family: 'Roboto Mono', monospace;
+  white-space: pre;
+  word-break: keep-all;
+}
+
+kbd  {
+  font-family: 'Roboto Mono', monospace;
 }
 
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 1.6;
   color: var(--color-main-foreground);
   background-color: var(--color-main-background);
   scroll-behavior: smooth;
