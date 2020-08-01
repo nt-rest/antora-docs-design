@@ -1,4 +1,4 @@
-= Antora Default UI
+= Antora UI Bundle
 
 Antora UI Bundle for https://github.com/nt-rest/nt-rest.github.io/
 
