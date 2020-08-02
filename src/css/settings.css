@@ -52,6 +52,7 @@
   --color-main-foreground: var(--color-ebonyclay);
   --color-main-link-normal-color: var(--color-belizehole);
   --color-main-link-hover-color: var(--color-dodgerblue);
+  --color-main-header-border: var(--color-silver);
   --color-main-breadcrumbs-link-normal-color: var(--color-belizehole);
   --color-main-breadcrumbs-link-hover-color: var(--color-dodgerblue);
   --color-main-breadcrumbs-link-current-color: var(--color-midnightblue);
