@@ -1,9 +1,12 @@
 aside.rside {
   grid-area: rside;
   border-left: 1px solid var(--color-silver);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-aside.rside > nav h1 {
+aside.rside > h1 {
   font-size: 0.9rem;
   font-weight: 300;
   padding: 0.4rem 0 0 0.4rem;

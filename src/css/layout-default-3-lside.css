@@ -2,12 +2,15 @@ aside.lside {
   grid-area: lside;
   color: var(--color-lside-foreground);
   background-color: var(--color-lside-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 aside.lside > h1 {
   font-size: 0.8rem;
   font-weight: 300;
-  margin: 2rem 0 0 1rem;
+  padding: 0 0 2rem 1rem;
 }
 
 aside.lside > nav > ul {

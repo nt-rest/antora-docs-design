@@ -1,11 +1,12 @@
 @media (min-width: 1024px) {
-  aside.lside > h1 {
-    position: fixed;
-    bottom: 2rem;
+  aside.lside {
+    height: calc(100vh - 3rem);
+    position: sticky;
+    top: 3rem;
   }
 
   aside.lside > nav {
-    position: sticky;
-    top: 1.6rem;
+    overflow-y: scroll;
+    scrollbar-width: thin;
   }
 }
