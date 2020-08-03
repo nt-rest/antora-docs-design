@@ -116,7 +116,7 @@ main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > table.tab
 
 div.listingblock + div.colist,
 div.literalblock + div.colist {
-  margin-top: -2rem !important;
+  margin-top: -1rem !important;
 }
 
 main div.paragraph > p,
@@ -192,7 +192,7 @@ main i.conum {
   display: inline-block;
   width: 2rem;
   height: 1.6rem;
-  margin: 0.2rem 0 0 0;
+  margin: 0.2rem 0.2rem 0 0;
   text-align: center;
   font-weight: 700;
 }
