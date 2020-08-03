@@ -3,13 +3,19 @@
 	"tasks": [
 		{
 			"type": "gulp",
-			"task": "preview",
+			"task": "bundle",
 			"problemMatcher": [],
-			"label": "gulp: preview",
+			"label": "gulp: bundle",
 			"group": {
 				"kind": "build",
 				"isDefault": true
 			}
+		},
+		{
+			"type": "gulp",
+			"task": "preview",
+			"problemMatcher": [],
+			"label": "gulp: preview"
 		}
 	]
 }
