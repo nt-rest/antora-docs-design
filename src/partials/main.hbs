@@ -13,7 +13,7 @@
 				<ul>
 					{{~#with page.componentVersion~}}
 					{{~#if (and ./title (not (or ./root (eq ./title @root.page.breadcrumbs.0.content))))~}}
-					<li><a href="{{{relativize ./url}}}">{{{./title}}}</a></li>
+					<li><a href="{{{relativize ./url}}}">{{{./version}}}</a></li>
 					{{~/if~}}
 					{{~/with~}}
 					{{~#each page.breadcrumbs~}}

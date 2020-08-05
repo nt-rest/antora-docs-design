@@ -5,22 +5,26 @@
 					<li>
 						<a href="javascript:void(0)">Documentation</a>
 						<ul>
-							<li><a href="#">Tutorials</a></li>
-							<li><a href="#">How Tos</a></li>
-							<li><a href="#">Explanations</a></li>
-							<li><a href="#">Reference</a></li>
-							<li><a href="#">Licensing</a></li>
+						{{~#each site.components~}}
+							{{~#if (eq ./latest/asciidoc/attributes/category "documentation")~}}
+								<li><a href="{{{siteRootPath}}}{{{ ./latest/url }}}">{{ ./latest/asciidoc/attributes/display_name }}</a></li>
+							{{~/if~}}
+						{{~/each~}}
 						</ul>
 					</li>
 					<li>
 						<a href="javascript:void(0)">Downloads</a>
 						<ul>
-							<li><a href="#">Source Code</a></li>
-							<li><a href="#">Latest Release</a></li>
-							<li><a href="#">Release History</a></li>
+							<li><a target="_blank" href="https://github.com/nt-rest/nt-rest">Source Code</a></li>
+							<li><a target="_blank" href="https://github.com/nt-rest/nt-rest">Latest Release</a></li>
+							<li><a target="_blank" href="https://github.com/nt-rest/nt-rest">Release History</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Store</a></li>
+					{{~#each site.components~}}
+						{{~#if (eq ./latest/asciidoc/attributes/category "root")~}}
+							<li><a href="{{{siteRootPath}}}{{{ ./latest/url }}}">{{ ./latest/asciidoc/attributes/display_name }}</a></li>
+						{{~/if~}}
+					{{~/each~}}
 				</ul>
 			</nav>
 		</header>

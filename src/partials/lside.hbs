@@ -2,5 +2,13 @@
 			<nav>
 				{{> lside-tree itemtree=page.navigation}}
 			</nav>
-			<h1>{{page.component.title}} {{page.componentVersion.displayVersion}}</h1>
+			{{~#each site.components~}}
+				{{~#if (eq this @root.page.component)~}}
+				<ul>
+					{{~#each versions ~}}
+					<li{{~#if (and (eq .. @root.page.component) (eq this @root.page.componentVersion))}} class="current"{{/if~}}><a href="{{ ./url }}">{{ ./version }}</a></li>
+					{{~/each~}}
+				</ul>
+				{{~/if~}}
+			{{~/each~}}
 		</aside>
