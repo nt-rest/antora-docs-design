@@ -65,6 +65,36 @@ Windows Registry Editor Version 5.00
 "PrintingServicePermissions"=dword:00000000
 ----
 
+== Roadmap
+
+* [ ] Local APIs
+** [x] Version API;
+** [x] Local authentication API;
+** [x] Relay authentication API;
+** [x] Identification API;
+** [x] Event log API;
+** [x] Fingerprinting API;
+** [ ] Local printing API;
+*** [ ] Monitor;
+*** [ ] RTF support;
+*** [ ] PDF support;
+*** [ ] XPS support;
+** [ ] Local scanning API;
+** [ ] Serial port API;
+* [ ] Support Infrastructure
+** [ ] CMD (Zip) reference installer source code
+** [ ] WiX (MSI) reference installer source code
+** [ ] NSIS reference installer source code
+** [ ] Inno reference installer source code
+** [ ] Update server
+** [ ] Update helper
+** [ ] Executables are digitally signed by Extended Validation certificate. SmartScreen will never report a false positive.
+** [ ] Executables are verified against anti-virus databases. Most popular anti-viruses will never report a false positive.
+** [ ] Source code is verified by an external security audit.
+* [ ] Cloud APIs
+** [ ] Cloud printing API.
+*** [ ] Cloud printing additional file formats: Microsoft(TM) Word(TM), Microsoft(TM) Excel(TM), etc.
+** [ ] Cloud scanning API.
 
 == Why?
 

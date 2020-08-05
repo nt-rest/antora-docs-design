@@ -46,7 +46,19 @@
     ':scope h5:not(.discrete),' +
     ':scope h6:not(.discrete)'
   var headerElements = mainElement.querySelectorAll(headerSelectors)
-  var ulStack = [document.createElement('ul')]
+  var ulTopElement = document.createElement('ul')
+  var liLevel1Element = document.createElement('li')
+  var aLevel1Element = document.createElement('a')
+  var ulLevel1Element = document.createElement('ul')
+
+  aLevel1Element.href = '#'
+  aLevel1Element.innerText = 'Sections'
+
+  liLevel1Element.appendChild(aLevel1Element)
+  liLevel1Element.appendChild(ulLevel1Element)
+  ulTopElement.appendChild(liLevel1Element)
+
+  var ulStack = [ulLevel1Element]
   var currentLevel = 2
   var currentLiElement = null
   var liElements = []
@@ -101,27 +113,44 @@
     }
   })
 
-  tocElement.appendChild(ulStack[0])
+  tocElement.appendChild(ulTopElement)
 
-  if (liElements.length > 0) {
-    liElements[0].classList.add('current')
+  function onScroll (e) {
+    liLevel1Element.classList.remove('current')
+
+    liElements.forEach(
+      function (liElement) {
+        liElement.classList.remove('current')
+      })
+
+    var liElementLastBeforeVisible = null
+    var liElementAnyCurrent = false
+
+    for (var headerElementIndex = 0; headerElementIndex < headerElements.length; ++headerElementIndex) {
+      var headerElement = headerElements[headerElementIndex]
+
+      if (
+        (headerElement.offsetTop > document.documentElement.scrollTop) &&
+        (headerElement.offsetTop < document.documentElement.scrollTop + window.innerHeight)) {
+        liElements[headerElementIndex].classList.add('current')
+        liElementAnyCurrent = true
+      }
+
+      if (headerElement.offsetTop < document.documentElement.scrollTop) {
+        liElementLastBeforeVisible = liElements[headerElementIndex]
+      }
+    }
+
+    if (!liElementAnyCurrent) {
+      if (liElementLastBeforeVisible) {
+        liElementLastBeforeVisible.classList.add('current')
+      } else {
+        liLevel1Element.classList.add('current')
+      }
+    }
   }
 
-  window.addEventListener(
-    'scroll',
-    function (e) {
-      for (var headerElementIndex = 0; headerElementIndex < headerElements.length; ++headerElementIndex) {
-        var headerElement = headerElements[headerElementIndex]
+  window.addEventListener('scroll', onScroll)
 
-        if (headerElement.offsetTop > document.documentElement.scrollTop) {
-          liElements.forEach(
-            function (liElement) {
-              liElement.classList.remove('current')
-            })
-
-          liElements[headerElementIndex].classList.add('current')
-          break
-        }
-      }
-    })
+  onScroll(null)
 })()

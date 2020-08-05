@@ -3,6 +3,7 @@ main {
   color: var(--color-main-foreground);
   background-color: var(--color-main-background);
   word-wrap: break-word;
+  padding-bottom: 3rem;
 }
 
 main > nav { display: none; }
@@ -10,10 +11,10 @@ main div.content { position: relative; }
 
 main button.copy {
   position: absolute;
-  top: -0.8rem;
-  left: calc(100% - var(--main-padding) - 0.8rem);
+  top: 0;
+  right: 0;
   font-family: "FontAwesome", monospace;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   padding: 0.2rem;
   opacity: 0.5;
 }
@@ -57,6 +58,8 @@ main a:hover {
 }
 
 main > div.paragraph,
+main > div.olist,
+main > div.ulist,
 main div.sectionbody > div.paragraph,
 main div.sectionbody > div.dlist,
 main div.sectionbody > div.exampleblock,
@@ -144,6 +147,15 @@ main table > caption {
   padding: 0.4rem 0.4rem 0.4rem 1.2rem;
   font-size: 1rem;
   overflow-x: auto;
+  overflow-y: visible;
+}
+
+main li > div.exampleblock > div.content,
+main li > div.imageblock > div.content,
+main li > div.listingblock > div.content,
+main li > div.literalblock > div.content {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.9rem;
 }
 
 main div.olist > ol,
@@ -157,19 +169,21 @@ main div.exampleblock div.title,
 main div.listingblock div.title,
 main div.literalblock div.title,
 main div.sidebarblock div.title {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-style: italic;
+  padding: 0.4rem 0.4rem 0.4rem 1.2rem;
+}
+
+main li > div.exampleblock div.title,
+main li > div.listingblock div.title,
+main li > div.literalblock div.title,
+main li > div.sidebarblock div.title {
+  padding: 0;
+  font-size: 1rem;
 }
 
 main div.imageblock div.title {
   font-style: italic;
-}
-
-main div.exampleblock div.title,
-main div.imageblock div.title,
-main div.listingblock div.title,
-main div.literalblock div.title {
-  padding: 0.4rem 0.4rem 0.4rem 1.2rem;
 }
 
 main div.sectionbody > table.tableblock > tbody > tr > td,
@@ -208,7 +222,7 @@ main i.conum::after { content: attr(data-value); }
 main i.conum + b { display: none; }
 
 main div.dlist > dl > dt { font-weight: 700; }
-main div.dlist > dl > dd { padding-left: 3rem; }
+main div.dlist > dl > dd { padding-left: 1rem; }
 
 main div.exampleblock > div.content {
   color: var(--color-main-exampleblock-foreground);
@@ -243,11 +257,6 @@ main table.tableblock td {
   border-top: 1px solid var(--color-main-table-border);
 }
 
-main div.olist,
-main div.ulist {
-  margin: 0 0 0 1rem;
-}
-
 main div.sectionbody > div.olist,
 main div.sectionbody > div.sect2 > div.olist,
 main div.sectionbody > div.sect2 > div.sect3 > div.olist,
@@ -263,7 +272,7 @@ main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > div.ulist
 
 main div.ulist.checklist > ul.checklist {
   list-style-type: none;
-  padding-left: 0;
+  margin-left: 0;
 }
 
 main div.ulist.checklist > ul.checklist i {

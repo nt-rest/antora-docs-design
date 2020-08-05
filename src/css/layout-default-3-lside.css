@@ -7,10 +7,39 @@ aside.lside {
   justify-content: space-between;
 }
 
-aside.lside > h1 {
+aside.lside > ul {
+  list-style-type: none;
   font-size: 0.8rem;
   font-weight: 300;
-  padding: 0 0 2rem 1rem;
+  padding: 0 0 0.6rem 2rem;
+}
+
+aside.lside > ul > li {
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+
+aside.lside > ul > li > a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-lside-link-normal-color);
+  padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+  border: 1px solid var(--color-lside-foreground);
+  border-radius: 0.5rem;
+}
+
+aside.lside > ul > li > a:visited {
+  color: var(--color-lside-link-normal-color);
+}
+
+aside.lside > ul > li > a:hover {
+  color: var(--color-lside-link-hover-color);
+}
+
+aside.lside > ul > li.current > a {
+  font-weight: 500;
+  color: var(--color-lside-background);
+  background-color: var(--color-lside-foreground);
 }
 
 aside.lside > nav > ul {
@@ -19,7 +48,6 @@ aside.lside > nav > ul {
 
 aside.lside > nav ul {
   list-style-type: none;
-  padding: 0 0 0 1rem;
 }
 
 aside.lside > nav li {
