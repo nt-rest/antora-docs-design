@@ -2,6 +2,11 @@
 			<img src='{{{uiRootPath}}}/img/logotype.svg' width='32' height='32' alt='Logotype' />
 			<nav>
 				<ul>
+					{{~#each site.components~}}
+						{{~#if (eq ./latest/asciidoc/attributes/category "root-pre")~}}
+							<li><a href="{{{siteRootPath}}}{{{ ./latest/url }}}">{{ ./latest/asciidoc/attributes/display_name }}</a></li>
+						{{~/if~}}
+					{{~/each~}}
 					<li>
 						<a href="javascript:void(0)">Documentation</a>
 						<ul>
@@ -21,7 +26,7 @@
 						</ul>
 					</li>
 					{{~#each site.components~}}
-						{{~#if (eq ./latest/asciidoc/attributes/category "root")~}}
+						{{~#if (eq ./latest/asciidoc/attributes/category "root-post")~}}
 							<li><a href="{{{siteRootPath}}}{{{ ./latest/url }}}">{{ ./latest/asciidoc/attributes/display_name }}</a></li>
 						{{~/if~}}
 					{{~/each~}}
