@@ -1,9 +1,6 @@
 aside.rside {
   grid-area: rside;
   border-left: 1px solid var(--color-silver);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 aside.rside > h1 {

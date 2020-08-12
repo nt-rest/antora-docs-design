@@ -131,7 +131,7 @@
 
       if (
         (headerElement.offsetTop > document.documentElement.scrollTop) &&
-        (headerElement.offsetTop < document.documentElement.scrollTop + window.innerHeight)) {
+        (headerElement.offsetTop < document.documentElement.scrollTop + 0.85 * window.innerHeight)) {
         liElements[headerElementIndex].classList.add('current')
         liElementAnyCurrent = true
       }

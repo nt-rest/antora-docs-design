@@ -24,7 +24,7 @@ Vestibulum consectetur nec urna a luctus.
 Quisque pharetra tristique arcu fringilla dapibus.
 Curabitur ut massa aliquam, cursus enim et, accumsan lectus.
 
-+++<div class='swagger-ui' id='A1' data-url='https://petstore.swagger.io/v2/swagger.json' data-filter='pet'></div>+++
++++<div class='swagger-ui' data-url='https://petstore.swagger.io/v2/swagger.json' data-filter='pet'></div>+++
 
 Keyboard::
 Used to enter text or control items on the screen. 
@@ -43,6 +43,11 @@ CAUTION: NT-REST is Windows(TM) specific so far. Specifically Windows(TM) 8.1 an
 
 IMPORTANT: NT-REST is Windows(TM) specific so far. Specifically Windows(TM) 8.1 and Windows(TM) 10 are supported. Linux and Mac versions are possible in theory, but we prefer to focus on 88% of desktops for now. We really love Linux though ❤️.
 
+== xref:history.adoc[]
+== xref:authentication-flow.adoc[]
+== xref:security.adoc[]
+
+.Some Title
 [source,ini]
 ----
 Windows Registry Editor Version 5.00 

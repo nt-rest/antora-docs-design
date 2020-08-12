@@ -2,34 +2,29 @@
 			<img src='{{{uiRootPath}}}/img/logotype.svg' width='32' height='32' alt='Logotype' />
 			<nav>
 				<ul>
-					{{~#each site.components~}}
-						{{~#if (eq ./latest/asciidoc/attributes/category "root-pre")~}}
-							<li><a href="{{{siteRootPath}}}{{{ ./latest/url }}}">{{ ./latest/asciidoc/attributes/display_name }}</a></li>
-						{{~/if~}}
-					{{~/each~}}
 					<li>
-						<a href="javascript:void(0)">Documentation</a>
+						<a href="javascript:void(0)">Root Level Item 1</a>
 						<ul>
-						{{~#each site.components~}}
-							{{~#if (eq ./latest/asciidoc/attributes/category "documentation")~}}
-								<li><a href="{{{siteRootPath}}}{{{ ./latest/url }}}">{{ ./latest/asciidoc/attributes/display_name }}</a></li>
-							{{~/if~}}
-						{{~/each~}}
+							<li><a href="javascript:void(0)">Sub Item 1-1</a></li>
+							<li><a href="javascript:void(0)">Sub Item 1-2</a></li>
+							<li><a href="javascript:void(0)">Sub Item 1-3</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="javascript:void(0)">Downloads</a>
+						<a href="javascript:void(0)">Root Level Item 2</a>
 						<ul>
-							<li><a target="_blank" href="https://github.com/nt-rest/nt-rest">Source Code</a></li>
-							<li><a target="_blank" href="https://github.com/nt-rest/nt-rest">Latest Release</a></li>
-							<li><a target="_blank" href="https://github.com/nt-rest/nt-rest">Release History</a></li>
+							<li><a href="javascript:void(0)">Sub Item 2-1</a></li>
+							<li><a href="javascript:void(0)">Sub Item 2-2</a></li>
+							<li>
+								<a href="javascript:void(0)">Sub Item 2-3</a>
+								<ul>
+									<li><a href="javascript:void(0)">Sub Item 2-3-1</a></li>
+									<li><a href="javascript:void(0)">Sub Item 2-3-2</a></li>
+									<li><a href="javascript:void(0)">Sub Item 2-3-3</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
-					{{~#each site.components~}}
-						{{~#if (eq ./latest/asciidoc/attributes/category "root-post")~}}
-							<li><a href="{{{siteRootPath}}}{{{ ./latest/url }}}">{{ ./latest/asciidoc/attributes/display_name }}</a></li>
-						{{~/if~}}
-					{{~/each~}}
 				</ul>
 			</nav>
 		</header>

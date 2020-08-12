@@ -3,173 +3,102 @@ main {
   color: var(--color-main-foreground);
   background-color: var(--color-main-background);
   word-wrap: break-word;
-  padding-bottom: 3rem;
+  position: relative;
+  padding: 0 var(--main-padding) 3rem var(--main-padding);
 }
-
-main > nav { display: none; }
-main div.content { position: relative; }
-
-main button.copy {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-family: "FontAwesome", monospace;
-  font-size: 0.8rem;
-  padding: 0.2rem;
-  opacity: 0.5;
-}
-
-main button.copy:hover { opacity: 1; }
 
 main h1,
-main div.sect1 > h2,
-main div.sect2 > h3,
-main div.sect3 > h4,
-main div.sect4 > h5,
-main div.sect5 > h6,
-main h2.discrete,
-main h3.discrete,
-main h4.discrete,
-main h5.discrete,
-main h6.discrete {
-  padding: 0 var(--main-padding) 0 var(--main-padding);
-  margin-top: 2rem;
-  border-top: 1px solid var(--color-main-header-border);
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  position: relative;
   font-weight: 300;
 }
 
-main h1 { font-size: 2.5rem; }
-main div.sect1 > h2 { font-size: 2.1rem; }
-main div.sect2 > h3 { font-size: 1.9rem; }
-main div.sect3 > h4 { font-size: 1.7rem; }
-main div.sect4 > h5 { font-size: 1.5rem; }
-main div.sect5 > h6 { font-size: 1.3rem; }
-
-main a {
-  color: var(--color-main-link-normal-color);
+main h1 {
+  font-size: 2.5rem;
 }
 
-main a:visited {
-  color: var(--color-main-link-normal-color);
+main h2 {
+  font-size: 2.1rem;
+  margin-top: 2.1rem;
+  margin-bottom: 1rem;
 }
 
-main a:hover {
-  color: var(--color-main-link-hover-color);
+main h3 {
+  font-size: 1.9rem;
+  margin-top: 1.9rem;
+  margin-bottom: 0.9rem;
 }
 
-main > div.paragraph,
-main > div.olist,
-main > div.ulist,
-main div.sectionbody > div.paragraph,
-main div.sectionbody > div.dlist,
-main div.sectionbody > div.exampleblock,
-main div.sectionbody > div.imageblock,
-main div.sectionbody > div.listingblock,
-main div.sectionbody > div.literalblock,
-main div.sectionbody > div.quoteblock,
-main div.sectionbody > div.sidebarblock,
-main div.sectionbody > div.sect2 > div.paragraph,
-main div.sectionbody > div.sect2 > div.dlist,
-main div.sectionbody > div.sect2 > div.exampleblock,
-main div.sectionbody > div.sect2 > div.imageblock,
-main div.sectionbody > div.sect2 > div.listingblock,
-main div.sectionbody > div.sect2 > div.literalblock,
-main div.sectionbody > div.sect2 > div.quoteblock,
-main div.sectionbody > div.sect2 > div.sidebarblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.paragraph,
-main div.sectionbody > div.sect2 > div.sect3 > div.dlist,
-main div.sectionbody > div.sect2 > div.sect3 > div.exampleblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.imageblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.listingblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.literalblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.quoteblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sidebarblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.paragraph,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.dlist,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.exampleblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.imageblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.listingblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.literalblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.quoteblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sidebarblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > div.paragraph,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > div.dlist,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > div.exampleblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > div.imageblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > div.listingblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > div.literalblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > div.quoteblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > div.sidebarblock,
-main div.sectionbody > div.colist,
-main div.sectionbody > div.sect2 > div.colist,
-main div.sectionbody > div.sect2 > div.sect3 > div.colist,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.colist,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > div.colist {
-  position: relative;
-  padding: 0 var(--main-padding) 0 var(--main-padding);
-  margin: 0 0 0.8rem 0;
+main h4 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
 }
 
-main div.sectionbody > table.tableblock,
-main div.sectionbody > div.sect2 > table.tableblock,
-main div.sectionbody > div.sect2 > div.sect3 > table.tableblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > table.tableblock,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > table.tableblock {
-  margin: 0 var(--main-padding) 2rem var(--main-padding);
+main h5 {
+  font-size: 1.3rem;
+  margin-top: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+main h6 {
+  font-size: 1.1rem;
+  margin-top: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+main a { color: var(--color-main-link-normal-color); }
+main a:visited { color: var(--color-main-link-normal-color); }
+main a:hover { color: var(--color-main-link-hover-color); }
+
+main div.paragraph,
+main div.olist,
+main div.ulist,
+main div.dlist,
+main div.colist,
+main div.exampleblock,
+main div.imageblock,
+main div.listingblock,
+main div.literalblock,
+main div.quoteblock,
+main div.sidebarblock {
+  margin-bottom: 0.8rem;
+}
+
+main div.olist div.olist,
+main div.ulist div.olist,
+main div.olist div.ulist,
+main div.ulist div.ulist {
+  margin-bottom: 0;
+}
+
+main div.olist > ol ol,
+main div.ulist > ul ol,
+main div.olist > ol ul,
+main div.ulist > ul ul {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+main table.tableblock {
   border-collapse: collapse;
 }
 
-div.listingblock + div.colist,
-div.literalblock + div.colist {
-  margin-top: -1rem !important;
-}
-
-main div.paragraph > p,
-main div.colist > table,
-main div.dlist > dl,
-main div.exampleblock > div.content,
-main div.imageblock > div.content,
-main div.listingblock > div.content,
-main div.literalblock > div.content,
-main div.quoteblock > blockquote,
-main div.sidebarblock > div.content,
-main div.sectionbody > table.tableblock > tbody > tr > td,
-main div.sectionbody > div.sect2 > table.tableblock > tbody > tr > td,
-main div.sectionbody > div.sect2 > div.sect3 > table.tableblock > tbody > tr > td,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > table.tableblock > tbody > tr > td,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > table.tableblock > tbody > tr > td,
-main div.sectionbody > table.tableblock > thead > tr > th,
-main div.sectionbody > div.sect2 > table.tableblock > thead > tr > th,
-main div.sectionbody > div.sect2 > div.sect3 > table.tableblock > thead > tr > th,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > table.tableblock > thead > tr > th,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > table.tableblock > thead > tr > th,
-main table > caption {
-  padding: 0.4rem 0.4rem 0.4rem 1.2rem;
-  font-size: 1rem;
-  overflow-x: auto;
-  overflow-y: visible;
-}
-
-main li > div.exampleblock > div.content,
-main li > div.imageblock > div.content,
-main li > div.listingblock > div.content,
-main li > div.literalblock > div.content {
-  padding: 0.2rem 0.4rem;
-  font-size: 0.9rem;
-}
-
-main div.olist > ol,
-main div.ulist > ul {
-  padding: 0 0.4rem 0 1.2rem;
-  font-size: 1rem;
-  overflow-x: auto;
+main table.stretch {
+  width: 90%;
+  margin-left: 5%;
 }
 
 main div.exampleblock div.title,
 main div.listingblock div.title,
 main div.literalblock div.title,
-main div.sidebarblock div.title {
-  font-size: 0.8rem;
+main div.sidebarblock div.title,
+main div.imageblock div.title {
+  font-size: 1.2rem;
   font-style: italic;
   padding: 0.4rem 0.4rem 0.4rem 1.2rem;
 }
@@ -178,32 +107,101 @@ main li > div.exampleblock div.title,
 main li > div.listingblock div.title,
 main li > div.literalblock div.title,
 main li > div.sidebarblock div.title {
-  padding: 0;
   font-size: 1rem;
 }
 
-main div.imageblock div.title {
-  font-style: italic;
+main div.paragraph > p,
+main div.olist > ol,
+main div.ulist > ul,
+main div.colist > table,
+main div.dlist > dl,
+main div.exampleblock > div.content,
+main div.imageblock > div.content,
+main div.listingblock > div.content,
+main div.literalblock > div.content,
+main div.quoteblock > blockquote,
+main div.sidebarblock > div.content,
+main table.tableblock > tbody > tr > td,
+main table.tableblock > thead > tr > th,
+main table.tableblock > caption {
+  padding: 0.4rem 0.4rem 0.4rem 1.2rem;
+  overflow-x: auto;
+  overflow-y: visible;
 }
 
-main div.sectionbody > table.tableblock > tbody > tr > td,
-main div.sectionbody > div.sect2 > table.tableblock > tbody > tr > td,
-main div.sectionbody > div.sect2 > div.sect3 > table.tableblock > tbody > tr > td,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > table.tableblock > tbody > tr > td,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > table.tableblock > tbody > tr > td,
-main div.sectionbody > table.tableblock > thead > tr > th,
-main div.sectionbody > div.sect2 > table.tableblock > thead > tr > th,
-main div.sectionbody > div.sect2 > div.sect3 > table.tableblock > thead > tr > th,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > table.tableblock > thead > tr > th,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > table.tableblock > thead > tr > th,
-main table > caption {
+main div.paragraph > p,
+main div.olist > ol,
+main div.ulist > ul,
+main div.colist > table,
+main div.dlist > dl,
+main div.exampleblock > div.content,
+main div.imageblock > div.content,
+main div.listingblock > div.content,
+main div.literalblock > div.content,
+main div.quoteblock > blockquote,
+main div.sidebarblock > div.content,
+main table.tableblock > tbody > tr > td {
+  font-family: 'Alegreya', serif;
+  font-weight: 400;
+}
+
+main div.listingblock > div.content {
+  position: relative;
+  color: var(--color-main-listingblock-foreground);
+  background-color: var(--color-main-listingblock-background);
+}
+
+main div.literalblock > div.content {
+  position: relative;
+  color: var(--color-main-literalblock-foreground);
+  background-color: var(--color-main-literalblock-background);
+}
+
+main div.quoteblock > blockquote > div.paragraph {
+  position: relative;
+  color: var(--color-main-quoteblock-foreground);
+  border-left: 0.2rem solid var(--color-main-quoteblock-border);
+}
+
+main div.quoteblock > div.attribution {
+  text-align: right;
+}
+
+main div.sidebarblock > div.content {
+  position: relative;
+  color: var(--color-main-sidebarblock-foreground);
+  background-color: var(--color-main-sidebarblock-background);
+}
+
+main table.tableblock td,
+main table.tableblock th,
+main table.tableblock caption {
   text-align: left;
 }
 
-main table > caption,
-main thead {
-  font-size: 1.4rem;
-  font-style: italic;
+main table.tableblock th,
+main table.tableblock caption {
+  font-weight: 500;
+}
+
+main table.tableblock td,
+main table.tableblock th {
+  border-top: 1px solid var(--color-main-table-border);
+}
+
+main li > div.exampleblock > div.content,
+main li > div.imageblock > div.content,
+main li > div.listingblock > div.content,
+main li > div.literalblock > div.content {
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+  font-size: 0.9rem;
+}
+
+main div.dlist > dl > dt { font-weight: 700; }
+
+div.listingblock + div.colist,
+div.literalblock + div.colist {
+  margin-top: -0.8rem !important;
 }
 
 main i.conum {
@@ -221,58 +219,9 @@ main i.conum {
 main i.conum::after { content: attr(data-value); }
 main i.conum + b { display: none; }
 
-main div.dlist > dl > dt { font-weight: 700; }
-main div.dlist > dl > dd { padding-left: 1rem; }
-
-main div.exampleblock > div.content {
-  color: var(--color-main-exampleblock-foreground);
-  background-color: var(--color-main-exampleblock-background);
-}
-
-main div.listingblock > div.content {
-  color: var(--color-main-listingblock-foreground);
-  background-color: var(--color-main-listingblock-background);
-}
-
-main div.literalblock > div.content {
-  color: var(--color-main-literalblock-foreground);
-  background-color: var(--color-main-literalblock-background);
-}
-
-main div.quoteblock > blockquote > div.paragraph {
-  color: var(--color-main-quoteblock-foreground);
-  border-left: 0.2rem solid var(--color-main-quoteblock-border);
-}
-
-main div.quoteblock > div.attribution {
-  text-align: right;
-}
-
-main div.sidebarblock > div.content {
-  color: var(--color-main-sidebarblock-foreground);
-  background-color: var(--color-main-sidebarblock-background);
-}
-
-main table.tableblock td {
-  border-top: 1px solid var(--color-main-table-border);
-}
-
-main div.sectionbody > div.olist,
-main div.sectionbody > div.sect2 > div.olist,
-main div.sectionbody > div.sect2 > div.sect3 > div.olist,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.olist,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > div.olist,
-main div.sectionbody > div.ulist,
-main div.sectionbody > div.sect2 > div.ulist,
-main div.sectionbody > div.sect2 > div.sect3 > div.ulist,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.ulist,
-main div.sectionbody > div.sect2 > div.sect3 > div.sect4 > div.sect5 > div.ulist {
-  padding: 0 var(--main-padding) 0 var(--main-padding);
-}
-
 main div.ulist.checklist > ul.checklist {
   list-style-type: none;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 main div.ulist.checklist > ul.checklist i {
@@ -286,9 +235,15 @@ main div.ulist.checklist > ul.checklist i.fa-check-square-o::before { content: "
 main div.ulist.checklist > ul.checklist i.fa-square-o::before { content: "\274f"; }
 
 main div.admonitionblock {
-  padding: 0 var(--main-padding) 0 var(--main-padding);
-  margin: 0 0 0.8rem 0;
+  position: relative;
+  padding-left: var(--main-padding);
+  left: var(--main-padding-neg);
+  width: calc(100% + 2 * var(--main-padding));
+  margin-bottom: 0.8rem;
 }
+
+main div.admonitionblock > table { width: 100%; }
+main div.admonitionblock > table td { padding: 0.4rem 0 0.4rem 0; }
 
 main div.admonitionblock > table td.icon {
   width: 5rem;
@@ -296,9 +251,20 @@ main div.admonitionblock > table td.icon {
   text-align: center;
 }
 
+main div.admonitionblock > table td.icon i.fa {
+  font-style: normal;
+  font-family: "FontAwesome", monospace;
+  font-size: 3rem;
+}
+
 main div.admonitionblock.note {
   background-color: var(--color-main-admonition-note-background);
   color: var(--color-main-admonition-note-foreground);
+}
+
+main div.admonitionblock.note > table td i.fa.icon-note::before {
+  content: "\f05a";
+  text-shadow: 1px 1px 2px var(--color-main-admonition-icon-shadow);
 }
 
 main div.admonitionblock.tip {
@@ -306,9 +272,19 @@ main div.admonitionblock.tip {
   color: var(--color-main-admonition-tip-foreground);
 }
 
+main div.admonitionblock.tip > table td i.fa.icon-tip::before {
+  content: "\f0eb";
+  text-shadow: 1px 1px 2px var(--color-main-admonition-icon-shadow);
+}
+
 main div.admonitionblock.warning {
   background-color: var(--color-main-admonition-warning-background);
   color: var(--color-main-admonition-warning-foreground);
+}
+
+main div.admonitionblock.warning > table td i.fa.icon-warning::before {
+  content: "\f071";
+  text-shadow: 1px 1px 2px var(--color-main-admonition-icon-shadow);
 }
 
 main div.admonitionblock.caution {
@@ -316,41 +292,17 @@ main div.admonitionblock.caution {
   color: var(--color-main-admonition-caution-foreground);
 }
 
+main div.admonitionblock.caution > table td i.fa.icon-caution::before {
+  content: "\f06d";
+  text-shadow: 1px 1px 2px var(--color-main-admonition-icon-shadow);
+}
+
 main div.admonitionblock.important {
   background-color: var(--color-main-admonition-important-background);
   color: var(--color-main-admonition-important-foreground);
 }
 
-main div.admonitionblock > table { width: 100%; }
-main div.admonitionblock > table td { padding: 0.4rem 0 0.4rem 0; }
-
-main div.admonitionblock > table td i.fa {
-  font-style: normal;
-  font-family: "FontAwesome", monospace;
-  font-size: 3rem;
-}
-
-main div.admonitionblock > table td i.fa.icon-note::before {
-  content: "\f05a";
-  text-shadow: 1px 1px 2px var(--color-main-admonition-icon-shadow);
-}
-
-main div.admonitionblock > table td i.fa.icon-tip::before {
-  content: "\f0eb";
-  text-shadow: 1px 1px 2px var(--color-main-admonition-icon-shadow);
-}
-
-main div.admonitionblock > table td i.fa.icon-warning::before {
-  content: "\f071";
-  text-shadow: 1px 1px 2px var(--color-main-admonition-icon-shadow);
-}
-
-main div.admonitionblock > table td i.fa.icon-caution::before {
-  content: "\f06d";
-  text-shadow: 1px 1px 2px var(--color-main-admonition-icon-shadow);
-}
-
-main div.admonitionblock > table td i.fa.icon-important::before {
+main div.admonitionblock.important > table td i.fa.icon-important::before {
   content: "\f06a";
   text-shadow: 1px 1px 2px var(--color-main-admonition-icon-shadow);
 }
@@ -374,8 +326,6 @@ main .button::after {
   padding-left: 0.2rem;
 }
 
-main mark { background-color: var(--color-main-mark-background); }
-
 main .keyseq {
   white-space: nowrap;
 }
@@ -396,6 +346,43 @@ main .right {
   float: right;
 }
 
+main .halign-left {
+  text-align: left;
+}
+
+main .halign-center {
+  text-align: center;
+}
+
+main .halign-right {
+  text-align: right;
+}
+
+main .valign-top {
+  vertical-align: top;
+}
+
+main .valign-bottom {
+  vertical-align: bottom;
+}
+
 main div.swagger-ui {
   clear: both;
 }
+
+main div.utterances {
+  margin-top: 3rem;
+  max-width: 100% !important;
+}
+
+main button.copy {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "FontAwesome", monospace;
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  opacity: 0.5;
+}
+
+main button.copy:hover { opacity: 1; }

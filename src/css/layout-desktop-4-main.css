@@ -1,12 +1,12 @@
 @media (min-width: 1024px) {
   main > nav {
     display: block;
-    margin: 0 0 0.8rem 0;
+    margin-bottom: 0.8rem;
   }
 
   main > nav ul {
     list-style-type: none;
-    padding: 0.4rem var(--main-padding) 0.4rem var(--main-padding);
+    padding: 0.4rem 0 0.4rem 0.2rem;
   }
 
   main > nav li {
@@ -27,11 +27,6 @@
     color: var(--color-main-breadcrumbs-link-normal-color);
   }
 
-  main > nav li > a:visited {
-    color: var(--color-main-breadcrumbs-link-current-color);
-  }
-
-  main > nav li > a:hover {
-    color: var(--color-main-breadcrumbs-link-hover-color);
-  }
+  main > nav li > a:visited { color: var(--color-main-breadcrumbs-link-current-color); }
+  main > nav li > a:hover { color: var(--color-main-breadcrumbs-link-hover-color); }
 }

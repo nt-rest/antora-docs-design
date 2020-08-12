@@ -95,6 +95,7 @@
   --color-form-failure: var(--color-monza);
   --color-form-selected: var(--color-dodgerblue);
   --main-padding: 3rem;
+  --main-padding-neg: -3rem;
   --form-border-width: 1px;
   --form-prefix-width: 1.2rem;
   --form-input-spacing: 0.4rem;
