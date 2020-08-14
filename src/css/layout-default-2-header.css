@@ -35,3 +35,10 @@ header > nav li > a:visited {
 header > nav li > a:hover {
   color: var(--color-header-foreground);
 }
+
+header input {
+  padding: 0.2rem 0.5rem;
+  margin: 0.4rem 0.6rem 0.4rem 0;
+  font-size: 1.2rem;
+  border: none;
+}
