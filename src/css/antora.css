@@ -7,10 +7,11 @@
 @import "layout-default-4-main.css";
 @import "layout-default-5-rside.css";
 @import "layout-default-6-footer.css";
-@import "layout-desktop-1-html.css";
-@import "layout-desktop-2-header.css";
-@import "layout-desktop-3-lside.css";
-@import "layout-desktop-4-main.css";
-@import "layout-desktop-5-rside.css";
-@import "layout-desktop-6-footer.css";
+@import "layout-screen-1-html.css";
+@import "layout-screen-2-header.css";
+@import "layout-screen-3-lside.css";
+@import "layout-screen-4-main.css";
+@import "layout-screen-5-rside.css";
+@import "layout-screen-6-footer.css";
+@import "layout-print-1-html.css";
 @import "highlight.css";

@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   main > nav {
     display: block;
     margin-bottom: 0.8rem;

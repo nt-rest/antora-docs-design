@@ -1,0 +1,42 @@
+@media only print {
+  body { display: block; }
+
+  header { display: none; }
+
+  aside.lside { display: none; }
+
+  main nav.breadcrumbs { display: none; }
+
+  main div.listingblock,
+  main div.literalblock,
+  main div.quoteblock,
+  main div.sidebarblock,
+  main div.admonitionblock {
+    page-break-inside: avoid;
+  }
+
+  main div.listingblock > div.content,
+  main div.literalblock > div.content,
+  main div.quoteblock > blockquote > div.paragraph,
+  main div.sidebarblock > div.content,
+  main div.admonitionblock {
+    color: var(--color-black) !important;
+    background-color: var(--color-white) !important;
+    border: 0.2rem solid var(--color-black) !important;
+    word-wrap: break-word;
+  }
+
+  main code {
+    overflow-x: visible;
+    white-space: pre-wrap;
+    page-break-inside: avoid;
+  }
+
+  main div.utterances { display: none; }
+
+  main button.copy { display: none; }
+
+  aside.rside { display: none; }
+
+  footer { display: none; }
+}

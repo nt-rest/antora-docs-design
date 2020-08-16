@@ -1,11 +1,11 @@
-@media (min-width: 1024px) {
-  aside.lside {
+@media only screen and (min-width: 1024px) {
+  aside.rside {
     height: calc(100vh - 5rem);
     position: sticky;
     top: 3rem;
   }
 
-  aside.lside > nav {
+  aside.rside > nav {
     overflow-y: scroll;
     scrollbar-width: thin;
   }
